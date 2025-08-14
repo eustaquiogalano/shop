@@ -6,9 +6,39 @@
     <title>Online Shopping</title>
   </head>
   <body>
-    <h1>Online Shop</h1>
-    <header></header>
-    <main></main>
+    <header>
+      <h1>SHAP</h1>
+    </header>
+    <main class="display-flex">
+      <section id="search-settings-section">
+        <div id="search-container" class="display-flex">
+          <button id="search-button">Search</button>
+          <input type="search" id="search-item-input" />
+        </div>
+        <div id="search-option-container" class="display-flex">
+          <div id="item-location" class="display-flex">
+            <select id="item-location-list">
+              <option value="">NCR</option>
+              <option value="">Luzon</option>
+              <option value="">Visayas</option>
+              <option value="">Mindanao</option>
+            </select>
+          </div>
+          <div id="item-price-range" class="display-flex">
+            <input type="number" id="lowest" placeholder="From" />
+            <p>-</p>
+            <input type="number" id="highest" placeholder="To" />
+          </div>
+        </div>
+      </section>
+      <section id="product-list-section" class="display-flex">
+        <div class="product-container">1</div>
+        <div class="product-container">2</div>
+        <div class="product-container">3</div>
+        <div class="product-container">4</div>
+        <div class="product-container">5</div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
