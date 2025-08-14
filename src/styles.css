@@ -1,3 +1,137 @@
-body {
-  background-color: rgb(44, 44, 44);
+:root {
+  --body-color: rgb(231, 231, 231);
+  --general-padding: 0.1rem;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--body-color);
+  height: 100vh;
+  width: 100vw;
+  padding: var(--general-padding);
+}
+
+.display-flex {
+  display: flex;
+}
+
+header {
+  background: red;
+  height: 6%;
+  width: 100%;
+  /* padding: var(--general-padding); */
+}
+
+main {
+  background-color: yellow;
+  height: 94%;
+  width: 100%;
+  flex-direction: column;
+}
+
+/* 
+  this both targets the search-setting-section
+  and the product-list-section 
+*/
+section {
+  width: 100%;
+}
+
+#search-settings-section {
+  background-color: aqua;
+  height: 20%;
+}
+
+#search-container {
+  background-color: green;
+  height: 50%;
+  padding: var(--general-padding);
+  gap: 0.2rem;
+}
+
+#search-button {
+  width: 20%;
+}
+
+#search-item-input {
+  width: 80%;
+  padding: 0.2rem;
+  font-size: 1rem;
+}
+
+#search-option-container {
+  background-color: red;
+  height: 50%;
+}
+
+#search-option-container div {
+  height: 100%;
+  width: 50%;
+}
+
+#item-location {
+  background-color: aqua;
+  align-items: center;
+  justify-content: center;
+}
+
+#item-location-list {
+  height: 90%;
+  width: 90%;
+  border: none;
+}
+
+#item-price-range {
+  background-color: yellowgreen;
+  padding: 0.2rem;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+#item-price-range input {
+  border: none;
+  font-size: 1rem;
+  width: 100%;
+  text-align: center;
+  padding: 0.3rem 0;
+}
+
+#item-price-range #lowest {
+  /* width: 50%; */
+}
+
+#item-price-range #highest {
+  /* width: 50%; */
+}
+
+#product-list-section {
+  background-color: blue;
+  height: 100%;
+  flex-direction: column;
+  padding: 0.3rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 0.3rem;
+}
+
+.product-container {
+  background-color: gray;
+  height: 100%;
+  width: 100%;
+}
+
+/* @media (min-width: 768px) {
+  main {
+    flex-direction: row;
+  }
+} */
