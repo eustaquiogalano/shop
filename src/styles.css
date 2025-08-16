@@ -135,3 +135,9 @@ section {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+@media (min-width: 1024px) {
+  #product-list-section {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
