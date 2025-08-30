@@ -1,5 +1,10 @@
 :root {
   --body-color: rgb(231, 231, 231);
+  --gh-black-dark: rgb(36, 41, 46);
+  --gh-black-light: rgb(43, 49, 55);
+  --gh-white-dark: rgb(250, 251, 252);
+  --gh-white-light: rgb(255, 255, 255);
+  --gh-green: rgb(45, 186, 78);
   --general-padding: 0.1rem;
 }
 
@@ -15,7 +20,7 @@ html {
 }
 
 body {
-  background-color: var(--body-color);
+  background-color: var(--gh-black-dark);
   height: 100vh;
   width: 100vw;
   padding: var(--general-padding);
@@ -26,17 +31,24 @@ body {
 }
 
 header {
-  background: red;
+  background: var(--gh-black-light);
   height: 6%;
   width: 100%;
+  margin-bottom: 0.3rem;
   /* padding: var(--general-padding); */
 }
 
+header h1 {
+  color: var(--gh-white-light);
+  margin-left: 30px;
+}
+
 main {
-  background-color: yellow;
+  background-color: var(--gh-black-dark);
   height: 94%;
   width: 100%;
   flex-direction: column;
+  gap: 0.3rem;
 }
 
 /* 
@@ -45,33 +57,41 @@ main {
 */
 section {
   width: 100%;
+  background-color: var(--gh-black-light);
 }
 
 #search-settings-section {
-  background-color: aqua;
+  background-color: var(--gh-black-light);
   height: 20%;
 }
 
 #search-container {
-  background-color: green;
+  background-color: var(--gh-black-light);
   height: 50%;
-  padding: var(--general-padding);
+  padding: 0.3rem;
   gap: 0.2rem;
 }
 
 #search-button {
   width: 20%;
+  background-color: var(--gh-green);
+  border: none;
+  border-radius: 3px;
+  color: var(--gh-white-light);
 }
 
 #search-item-input {
   width: 80%;
   padding: 0.2rem;
   font-size: 1rem;
+  border-radius: 3px;
+  border: none;
 }
 
 #search-option-container {
-  background-color: red;
+  background-color: var(--gh-black-light);
   height: 50%;
+  padding: 0.3rem;
 }
 
 #search-option-container div {
@@ -80,7 +100,6 @@ section {
 }
 
 #item-location {
-  background-color: aqua;
   align-items: center;
   justify-content: center;
 }
@@ -89,17 +108,23 @@ section {
   height: 90%;
   width: 90%;
   border: none;
+  border-radius: 3px;
 }
 
 #item-price-range {
-  background-color: yellowgreen;
+  background-color: transparent;
   padding: 0.2rem;
   align-items: center;
   gap: 0.2rem;
 }
 
+#item-price-range p {
+  color: var(--gh-white-light);
+}
+
 #item-price-range input {
   border: none;
+  border-radius: 3px;
   font-size: 1rem;
   width: 100%;
   text-align: center;
@@ -115,7 +140,9 @@ section {
 }
 
 #product-list-section {
-  background-color: blue;
+  background-color: var(--gh-black-light);
+  /* background-color: red; */
+
   height: 100%;
   padding: 0.3rem;
   display: grid;
@@ -126,14 +153,20 @@ section {
 }
 
 .product-container {
-  background-color: gray;
+  background-color: var(--gh-white-dark);
+  /* background-color: yellow; */
+
   height: auto;
   width: 100%;
   padding: 0.3rem;
+  border: none;
+  border-radius: 3px;
 }
 
 img {
   width: 100%;
+  border: 2px solid var(--gh-black-dark);
+  border-radius: 3px;
 }
 
 @media (min-width: 768px) {
