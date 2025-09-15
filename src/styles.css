@@ -95,7 +95,7 @@ section {
 
 #search-option-container {
   background-color: var(--gh-black-light);
-  height: 50%;
+  height: 40%;
   /* padding: 0.3rem; */
 }
 
@@ -109,8 +109,12 @@ section {
   justify-content: center;
 }
 
+#item-location-list,
+#item-price-range input {
+  height: 80%;
+}
+
 #item-location-list {
-  height: 90%;
   width: 90%;
   border: none;
   border-radius: 3px;
@@ -124,6 +128,7 @@ section {
 
 #item-price-range p {
   color: var(--gh-white-light);
+  font-size: 1rem;
 }
 
 #item-price-range input {
