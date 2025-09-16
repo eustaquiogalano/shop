@@ -153,13 +153,14 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: auto;
+  align-items: start;
+  height: auto;
   gap: 0.3rem;
   overflow: auto;
 }
 
 .product-container {
   background-color: var(--gh-white-dark);
-  height: auto;
   width: 100%;
   padding: 0.3rem;
   border: none;
@@ -174,7 +175,7 @@ img {
 
 @media (min-width: 768px) {
   #product-list-section {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
