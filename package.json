@@ -26,7 +26,7 @@
   "name": "shop",
   "version": "2.0.0",
   "description": "A online shopping website for things you don't need",
-  "main": "./src/index.js",
+  "main": "./src/js/index.js",
   "dependencies": {
     "accepts": "^1.3.8",
     "acorn": "^8.14.1",
